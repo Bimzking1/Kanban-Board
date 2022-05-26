@@ -1,11 +1,4 @@
-import React from 'react'
-import List from '../Components/List'
-import style from './index.module.css'
-import 'normalize.css';
-
-const Home = () => {
-
-  const listData = [
+const listData = [
     {
         title: "Not Started",
         description: "Way to Town of Colors",
@@ -186,21 +179,6 @@ const Home = () => {
             }
         ]
     }
-  ]
+]
 
-  return (
-    <div className={style.boardContainer}>
-      <h1>My Kanban Board</h1>
-      <div className={style.listContainer}>
-        {listData.map((listBoard) => (
-          <List data={listBoard} key={listBoard.title} />
-        ))}
-        {/* <List />
-        <List />
-        <List /> */}
-      </div>
-    </div>
-  )
-}
-
-export default Home
+export default listData
